@@ -1,0 +1,28 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "9c6b87c8368cf65e69adfbe843c2c9122800c984221064e6029cece7a4f3adc2"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.7"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "cromulent": {
+            "hashes": [
+                "sha256:487f18de1bd039bd38e1edc416357a68074fbdcb59212f83ece94bbc2ebe25d1"
+            ],
+            "index": "pypi",
+            "version": "==0.9.12"
+        }
+    },
+    "develop": {}
+}
