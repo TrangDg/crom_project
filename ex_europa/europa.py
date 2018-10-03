@@ -1,15 +1,16 @@
 from cromulent.model import factory, Actor, Production, BeginningOfExistence, \
-	EndOfExistence, TimeSpan, Place, InformationObject, Phase 
+	EndOfExistence, TimeSpan, Place, InformationObject, Phase, VisualItem 
 from cromulent.vocab import Painting, add_art_setter, PrimaryName, Name, \
-	CollectionSet, instances, aat_culture_mapping, LocalNumber, DimensionStatement, \
-	MaterialStatement, Gallery, MuseumPlace, Signature, BottomPart, \
-	Description, RightsStatement, MuseumOrg, Purchase, Exhibition, ExhibitionPlace, \
-	MultiExhibition 
+	CollectionSet, instances, aat_culture_mapping, AccessionNumber, Height, Width, \
+	SupportPart, Gallery, MuseumPlace, Signature, BottomPart, \
+	Description, RightsStatement, MuseumOrg, Purchase
+
 factory.id_type_label = True
 add_art_setter()
 
 obj = Painting("http://www.getty.edu/art/collection/objects/882/rembrandt-harmensz-van-rijn-the-abduction-of-europa-dutch-1632/", 
 	label="The Abduction of Europa", art=1)
+
 # Title
 obj.identified_by = PrimaryName(label="Title", value="The Abduction of Europa")
 obj.identified_by = Name(label="ALternate Title", value="El rapto de Europa (Published Title)")
@@ -39,8 +40,10 @@ artist.brought_into_existence_by = birth
 artist.taken_out_of_existence_by = death
 prod.carried_out_by = artist
 
-# # Culture
-# obj.genre = aat_culture_mapping["dutch"]
+# Culture
+vitem = VisualItem()
+vitem.style = instances["dutch nationality"]
+obj.shows = vitem 
 
 # Production date
 date = TimeSpan(label="1632")
@@ -49,14 +52,28 @@ date.end_of_the_end = "1633-01-01T00:00:00Z"
 prod.timespan = date
 
 # Object No.
-loc_no = LocalNumber(label="Object Number", value="95.PB.7")
+loc_no = AccessionNumber(label="Object Number", value="95.PB.7")
 obj.identified_by = loc_no
 
-# Dimensions and Materials
-dim = DimensionStatement(label="Dimensions", value="64.6 x 78.7 cm (25 7/16 x 31 in.)")
-mat = MaterialStatement(label="Medium", value="Oil on single oak panel")
-obj.referred_to_by = dim
-obj.referred_to_by = mat
+# Dimensions 
+h_cm = Height(label="Height in centimeter", value=64.6)
+h_cm.unit = instances["cm"]
+w_cm = Width(label="Wisth in centimiter", value=78.7)
+w_cm.unit = instances["cm"]
+h_in = Height(label="Height in inches", value=25+(7/16))
+h_in.unit = instances["inches"]
+w_in = Width(label="Width in inches", value=31)
+w_in.unit = instances["inches"]
+obj.dimension = h_cm
+obj.dimension = w_cm
+obj.dimension = h_in
+obj.dimension = w_in
+
+# Materials
+sup = SupportPart(label="Single oak panel")
+obj.made_of = instances["oil"]
+obj.part = sup 
+sup.made_of = instances["oak"]
 
 # Current location
 loc = Gallery(label="Gallery E205")

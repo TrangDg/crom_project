@@ -1,8 +1,8 @@
 # Acquisition from Jacques Specx
 
 from cromulent.model import factory, TimeSpan, Acquisition, Person, \
-	BeginningOfExistence, EndOfExistence, Place
-from cromulent.vocab import Painting, add_art_setter
+	BeginningOfExistence, EndOfExistence, Place, LinguisticObject
+from cromulent.vocab import Painting, add_art_setter, Description
 
 add_art_setter()
 
@@ -35,9 +35,15 @@ date = TimeSpan()
 date.begin_of_the_begin = "1652-01-01T00:00:00Z"
 date.end_of_the_end = "1652-12-31T23:59:59Z"
 
+# Description and Source
+des = Description(value="- 1652: Jacques Specx, 1585 - 1652 (Amsterdam, The Netherlands)")
+src = LinguisticObject(label="Source", value="In death inv. of 1652")
+des.referred_to_by = src
+
 acq.transferred_title_of = obj
 acq.timespan = date
 acq.transferred_title_from = p
+acq.referred_to_by = des
 
 
 

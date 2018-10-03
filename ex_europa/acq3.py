@@ -2,7 +2,7 @@
 
 from cromulent.model import factory, TimeSpan, Acquisition, Person, \
 	BeginningOfExistence, EndOfExistence, Place
-from cromulent.vocab import Painting, add_art_setter
+from cromulent.vocab import Painting, add_art_setter, Description
 
 add_art_setter()
 
@@ -33,13 +33,17 @@ p.taken_out_of_existence_by = death
 
 # Date of Acquisition
 date = TimeSpan()
-date.begin_of_the_begin = "1652-01-01T00:00:00Z"
+date.begin_of_the_begin = "1670-01-01T00:00:00Z"
 date.end_of_the_end = "1736-12-31T23:59:59Z"
+
+# Description 
+des = Description(value="- 1736: Jeanne Baptiste d'Albert de Luynes, comtesse de Verrue, 1670 - 1736 (Paris, France; Savoy, France), upon her death, held in trust by the estate.")
+
 
 acq.transferred_title_of = obj
 acq.timespan = date
 acq.transferred_title_to = p
-
+acq.referred_to_by = des
 
 
 print(factory.toString(acq, compact=False)) 
