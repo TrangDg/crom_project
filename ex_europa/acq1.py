@@ -39,12 +39,14 @@ date.end_of_the_end = "1652-12-31T23:59:59Z"
 # Description and Source
 des = Description(value="- 1652: Jacques Specx, 1585 - 1652 (Amsterdam, The Netherlands)")
 src = LinguisticObject(label="Source", value="In death inv. of 1652")
-des.referred_to_by = src
+
 
 acq.transferred_title_of = obj
 acq.timespan = date
 acq.transferred_title_to = p
 acq.referred_to_by = des
+acq.referred_to_by = src
+
 
 print(factory.toString(acq, compact=False)) 
 
