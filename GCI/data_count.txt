@@ -1,0 +1,594 @@
+Acquired_By
+
+('', 6606)
+('Art Kaplan', 3785)
+('Bill Ginell', 532)
+('Tom Learner', 432)
+('M. Schilling', 374)
+('D. Stulik', 245)
+('A. Kaplan', 183)
+('Roberta Renz', 132)
+('Casey Greet', 126)
+('Jesus Jimenez', 107)
+('Art kaplan', 68)
+('D. Stulik---GCI', 65)
+('M.  Derrick---GCI', 61)
+('Cecily Grzywacz', 60)
+('Giacomo Chiari', 56)
+('Z.  Pinney', 49)
+('Dusan Stulik', 46)
+('M. Komsky', 39)
+('A. Rothe---JPGM', 35)
+('G. Chiari', 24)
+('A. Parker', 24)
+('D.  Stulik---GCI', 19)
+('Carrie Brindle', 16)
+('A. Parker---GCI', 14)
+('JPGM Painting Conservation', 13)
+('C.  Grzywacz---GCI', 13)
+('H.  Florsheim---GCI', 13)
+('A.  Parker---GCI', 9)
+('B. Ginell', 9)
+('M. Bolton', 8)
+('JPGM Dec Arts Conservation', 7)
+('Catherine Patterson', 7)
+('A. Rothe - JPGM', 5)
+('N.  Barrio', 5)
+('M. Bishop', 5)
+('H. Khanjian', 5)
+('N. Agnew---GCI', 4)
+('A.  Wallert---JPGM', 3)
+('M.  Gergen---GCI', 3)
+('R. Navarro---JPGM', 3)
+('M. Corzo---GCI', 3)
+('Mike Schilling', 3)
+('S. Maekawa---GCI', 2)
+('T.  Kieslich', 2)
+('J. Podany---JPGM', 2)
+('H. Khanjian---GCI', 2)
+('M. Bishop---GCI', 2)
+('F. Lambert---JPGM Antiquities', 2)
+('JPGM Antiquities Conservation', 2)
+('M. Saltzman', 2)
+('M. Derrick', 2)
+('J. Keeney', 2)
+('\ufeffAcquired By', 1)
+(' D. Stulik---GCI', 1)
+('E. Hansen---GCI', 1)
+('S.  Maekawa---GCI', 1)
+('Sue Gatenby', 1)
+('A. Wallert---JPGM', 1)
+('C. Kreul', 1)
+(' ', 1)
+('E.  Stacy', 1)
+('M.  Striegel---GCI', 1)
+('Z. Pinney', 1)
+('M. Derrick---GCI', 1)
+('M. Derrick & M. Gergen', 1)
+('H. Florsheim', 1)
+('E. Hansen', 1)
+
+
+-----------------------------------------------------------------------
+
+SAMPLE TYPE
+
+
+
+
+
+
+('Pigment', 2309)
+('stone, natural', 2215)
+('Prepared mixture', 1235)
+('Wood', 742)
+('Dye', 639)
+('Paint, oil-based, water mixable', 527)
+('Paint, oil-based', 507)
+('Natural Resin', 389)
+('Photographic Paper', 377)
+('Raw Material - organic (seed, nut, etc.)', 356)
+('Gum', 340)
+('Paint, acrylic', 338)
+('Protein', 291)
+('Raw Material - inorganic', 283)
+('Oil', 276)
+('Paint, watercolor', 263)
+('Film', 260)
+('Ink', 248)
+('Fabric / Textile', 229)
+('Synthetic Resin', 204)
+('Wax', 164)
+('Varnish', 119)
+* ('Other', 111) as Other (information indicator)
+* ('Paint Additive', 104) as Additive
+('Medium - commercially prepared', 93)
+('Filler', 81)
+('Glass', 66)
+('Stone, natural', 65)
+('Metal', 61)
+* ('Paint, other', 54) as Paint
+('Paint, tempera', 49)
+('Leather', 43)
+('Oleoresin / Balsam', 38)
+('Adhesive', 30)
+('Paper', 29)
+('Pastel', 26)
+('Paint, gouache', 25)
+('Stone, artificial', 17)
+('Brush', 17)
+('Solvent', 13)
+('Sample Book', 5)
+('Glaze', 3)
+('Synthetic resin', 3)
+* ('', 2)
+('Abrasive', 2)
+('Size', 1)
+('Plastic', 1)
+--------------------------------------------------------------------------------
+
+PHYSICAL FORM
+('Raw / Natural Form', 2636)
+('Paint-out Plate', 1651)
+('Powder', 1466)
+('', 1323)
+('Slide', 1218)
+('Paste', 744)
+('Solution', 544)
+('opaque powder', 507)
+('Photographic Paper', 377)
+('Opaque,\nPaste', 270)
+('Photographic Film Roll', 230)
+('Dye on yarn (wool)', 219)
+('Opaque, \nChunk(s) ', 192)
+('Transparent, Liquid', 170)
+('Opaque, \nPowder ', 145)
+('Paint-out plate', 136)
+('Flakes / Chips', 135)
+('Other Solid (wood, fabric, etc.)', 115)
+('Translucent, \nChunk(s) ', 77)
+('Solid', 72)
+('Transparent,\nLiquid', 62)
+('paste in tube', 49)
+('Sheet or Foil (metal)', 45)
+('spray', 38)
+('solid cube', 33)
+('Dried film on glass; Opaque, \nSolid', 30)
+('Transparent,\nChunk(s) ', 28)
+('Translucent, Chunk(s) ', 24)
+('Photographic Sheet Film', 24)
+('Opaque, Chunk(s) ', 23)
+('Translucent, \nFlake(s)', 22)
+('Opaque, \nPaste', 22)
+('Single Liquid', 21)
+('Opaque,\nSolid', 17)
+('Opaque, \nFlake(s)', 17)
+('Opaque, \nLiquid', 16)
+('Translucent, Liquid', 15)
+('Opaque, \nSolid', 15)
+('Opaque, \nChunks ', 15)
+('Transparent, \nPaste', 14) 
+('Dried film on glass;Transparent,\nSolid', 14)
+('Opaque, \nBlock(s) ', 14)
+('paste', 14)
+('Transparent, Solid', 13)
+('Transparent, Chunk(s) ', 13)
+('Opaque, Liquid', 13)
+('Opaque, Paste', 13)
+('Sample Book or Framed Collection', 13)
+('Pigment on consolidated mortar', 13)
+('Opaque, \nGranule(s)', 12)
+('Opaque, Solid', 11)
+('Opaque, Flake(s)', 10)
+('Opaque, \nSheet(s)', 10)
+('transparent liquid', 10)
+('small paint-out sample', 10)
+('Opaque, Powder ', 9)
+('Transparent,\nFlake(s)', 9)
+('Transparent,\nSheet(s)', 8)
+('opaque paste', 8)
+('Transparent Liquid', 7)
+('Dye on yarn (cotton)', 7)
+('Translucent, Flake(s)', 6)
+('Translucent, \nLiquid', 6)
+('Dye on yarn (silk)', 6)
+('Beads', 6)
+('Translucent, Paste', 5)
+('Translucent, \nSheet(s)', 5)
+('Dried film on glass', 5)
+('Opaque powder ', 5)
+('Opaque,\n\nPaste', 4)
+('Opaque,\nLiquid', 4)
+('Transparent,\nSolid', 4)
+('Dried film on glass; Opaque, Solid', 4)
+('Dried film', 4)
+('Opaque, Dried film ', 4)
+('Translucent, \nSolid', 4)
+('Raw powder', 4)
+('Thin Film (metal)', 4)
+('Movie Film', 4)
+('Crayon', 4)
+('Translucent, Block(s) ', 3)
+('Transparent, Flake(s)', 3)
+('Opaque, Granule(s)', 3)
+('Transparent, Paste', 3)
+('Translucent, \nGranule(s)', 3)
+('Opaque chunk(s) ', 3)
+('opaque pieces', 3)
+('translucent liquid', 3)
+('small pellets', 3)
+('Paste in Tube', 3)
+('Samples on canvas', 3)
+('Liquid, Opaque ', 2)
+('Opaque,  Solid', 2)
+('Opaque, Sheet(s)', 2)
+('Translucent, Granule(s)', 2)
+('Dried film on glass; Opaque Solid', 2)
+('opaque sheets', 2)
+('Dried film on glass; Transparent Solid', 2)
+('Opaque,  Dried film', 2)
+('Translucent, \nBlock(s) ', 2)
+('dried film', 2)
+('opaque solid', 2)
+('Transparent,\nGranule(s)', 2)
+('Transparent,\nFlakes', 2)
+('coarse powder of reddish-brown fragments\n', 2)
+('coarse powder of dark brown fragments\n', 2)
+('dark brown fragments\n', 2)
+('fragments of clear yellow resin\n', 2)
+('opaque liquid', 2)
+('block solid', 2)
+('film', 2)
+('Solid film', 2)
+('Slide Film Roll', 2)
+('Grains', 2)
+('Raw / Chunks', 2)
+('Ink Stick', 2)
+('Transparent beads', 2)
+('Physical Form', 1)
+('chunk of grey-green material', 1)
+('Liquid, Translucent', 1)
+('Opaque,  Liquid', 1)
+('Translucent, Sheet(s)', 1)
+('Transparent, Sheet(s)', 1)
+('Translucent, Solid', 1)
+('Opaque,  Chunk(s) ', 1)
+('Transparent,Chunk(s) ', 1)
+('Transparent,  Liquid', 1)
+('very finely-divided yellow particles ', 1)
+('very finely-divided white particles', 1)
+('very finely-divided black particles', 1)
+('very finely-divided red particles', 1)
+('transparent solid; sheets', 1)
+('Transparent sheets', 1)
+('dried film on glass; Opaque Solid', 1)
+('Dried film; Opaque, ', 1)
+('Opaque, Dried film', 1)
+('Translucent,  Dried film', 1)
+('Dried film on glass; Translucent, \nSolid', 1)
+('undiluted blood on filter paper (bovine blood collected from abbatoires)\nOpaque, \nSolid', 1)
+('Dried film on glass; Transparent, Solid', 1)
+('Opaque, \nDisk(s)', 1)
+('lumps of dark brown wax\nOpaque, \nPaste', 1)
+('Opaque Disk(s)', 1)
+('Opaque grains', 1)
+('Chunk(s) \nOpaque, ', 1)
+('Translucent flake(s)', 1)
+('Opaque, \nFiber(s)', 1)
+('Transparent,\nPowder ', 1)
+('Transparent, Powder ', 1)
+('opaque solid; dried film on glass', 1)
+('Transparent liquid', 1)
+('hard chunks, Translucent, Flake(s)', 1)
+('Opaque chunks', 1)
+('Opaque, chunks', 1)
+('Opaque, \nFlakes', 1)
+('grains', 1)
+('Opaque, \nPowder \nLiquid', 1)
+('Chunks \nTranslucent, \nFlake(s)', 1)
+('Opaque, \nChunks \nGranule(s)', 1)
+('Opaque, \nChunks \nChunk(s) ', 1)
+('chunks of yellow material\nTranslucent, \nBlock(s) ', 1)
+('strips of sticky, stiff, reddish brown material\nTranslucent, \nChunk(s) ', 1)
+('Opaque, \nLiquid\nSolid', 1)
+('Clear, reddish-brown resin chunks\nTranslucent, \nChunk(s) ', 1)
+('grey-brown powder\nOpaque, \nGranule(s)', 1)
+('powder and fragments of clear yellow gum, with some tiny dark bits, plant fibers, and opaque, yellow chunks.', 1)
+('dried film of pale brown material; some areas are clear and other areas are opaque, possibly with plant fibers incorporated into the film', 1)
+('fragments and powder of reddish-brown gum\n', 1)
+('soft lumps of dark reddish brown tree exudate\n', 1)
+('dark brown chunks\n', 1)
+('taupe-colored, somewhat granular, viscous liquid\n', 1)
+('milky pale yellow-green, somewhat granular, viscous liquid\n', 1)
+('chunks of brown material\n', 1)
+('Transparent,', 1)
+('coarse powder of brown fragments\n', 1)
+('Opaque\nChunks\nSolid,\nChunks \nOpaque, \nGranule(s)', 1)
+('Many small fragments.  Loose powder and numerous buff-colored chunks, plus two clear pale green fragments\n', 1)
+('dark brown, shiny fragments\n', 1)
+('powder and lumps of dark brown resin\n', 1)
+('soft, sticky lumps of brown tree trunk exudate\n', 1)
+('powder and fragments of dark brown material\n', 1)
+('green powder and fragments of plant fibers\n', 1)
+('powder and lumps of brown material\n', 1)
+('chunk of grey-green material\n', 1)
+('dark brown lump', 1)
+('Liquid', 1)
+('liquid', 1)
+('opaque chunks', 1)
+('translucent chunks', 1)
+('Dried film on glass; opaque solid', 1)
+('pliable solid', 1)
+('solid resin, liquid solvent (separate)', 1)
+('Gel', 1)
+('Raw, powdered', 1)
+('pellets', 1)
+('Hardened solution', 1)
+('drop of undiluted sample on filter paper\nOpaque, \nPaste', 1)
+('transparent, viscous liquid', 1)
+('dried up - residue only', 1)
+('Translucent pellets', 1)
+('sample on stone', 1)
+('Fibers', 1)
+('Lump', 1)
+('liquid mixture', 1)
+('Beads\n', 1)
+('Chips, powder', 1)
+('Chunks', 1)
+
+Within three words count:
+
+['raw / natural form', '2636']
+['paint-out plate', '1787']
+['powder', '1466']
+['', '1323']
+['slide', '1218']
+['paste', '758']
+['solution', '544']
+['opaque powder', '512']
+['photographic paper', '377']
+['opaque,\npaste', '270']
+['photographic film roll', '230']
+['opaque, \nchunk(s)', '192']
+['transparent, liquid', '170']
+['opaque, \npowder', '145']
+['flakes / chips', '135']
+['translucent, \nchunk(s)', '77']
+['solid', '72']
+['transparent,\nliquid', '62']
+['paste in tube', '52']
+['spray', '38']
+['solid cube', '33']
+['transparent,\nchunk(s)', '28']
+['translucent, chunk(s)', '24']
+['photographic sheet film', '24']
+['opaque, chunk(s)', '23']
+['translucent, \nflake(s)', '22']
+['opaque, \npaste', '22']
+['single liquid', '21']
+['transparent liquid', '18']
+['opaque,\nsolid', '17']
+['opaque, \nflake(s)', '17']
+['opaque, \nliquid', '16']
+['translucent, liquid', '15']
+['opaque, \nsolid', '15']
+['opaque, \nchunks', '15']
+['transparent, \npaste', '14']
+['opaque, \nblock(s)', '14']
+['transparent, solid', '13']
+['transparent, chunk(s)', '13']
+['opaque, liquid', '13']
+['opaque, paste', '13']
+['opaque, \ngranule(s)', '12']
+['opaque, solid', '11']
+['opaque, flake(s)', '10']
+['opaque, \nsheet(s)', '10']
+['small paint-out sample', '10']
+['opaque, powder', '9']
+['transparent,\nflake(s)', '9']
+['transparent,\nsheet(s)', '8']
+['opaque paste', '8']
+['beads', '7']
+['translucent, flake(s)', '6']
+['dried film', '6']
+['translucent, \nliquid', '6']
+['translucent, paste', '5']
+['translucent, \nsheet(s)', '5']
+['opaque, dried film', '5']
+['opaque,\n\npaste', '4']
+['opaque,\nliquid', '4']
+['transparent,\nsolid', '4']
+['translucent, \nsolid', '4']
+['raw powder', '4']
+['thin film (metal)', '4']
+['movie film', '4']
+['crayon', '4']
+['translucent, block(s)', '3']
+['transparent, flake(s)', '3']
+['opaque, granule(s)', '3']
+['transparent, paste', '3']
+['translucent, \ngranule(s)', '3']
+['opaque chunk(s)', '3']
+['opaque pieces', '3']
+['grains', '3']
+['translucent liquid', '3']
+['small pellets', '3']
+['samples on canvas', '3']
+['liquid, opaque', '2']
+['opaque,  solid', '2']
+['opaque, sheet(s)', '2']
+['translucent, granule(s)', '2']
+['opaque sheets', '2']
+['opaque,  dried film', '2']
+['translucent, \nblock(s)', '2']
+['opaque solid', '2']
+['transparent,\ngranule(s)', '2']
+['opaque chunks', '2']
+['transparent,\nflakes', '2']
+['dark brown fragments', '2']
+['liquid', '2']
+['opaque liquid', '2']
+['block solid', '2']
+['film', '2']
+['solid film', '2']
+['slide film roll', '2']
+['raw / chunks', '2']
+['ink stick', '2']
+['transparent beads', '2']
+['physical form', '1']
+['liquid, translucent', '1']
+['opaque,  liquid', '1']
+['translucent, sheet(s)', '1']
+['transparent, sheet(s)', '1']
+['translucent, solid', '1']
+['opaque,  chunk(s)', '1']
+['transparent,chunk(s)', '1']
+['transparent,  liquid', '1']
+['transparent solid; sheets', '1']
+['transparent sheets', '1']
+['dried film; opaque,', '1']
+['translucent,  dried film', '1']
+['opaque, \ndisk(s)', '1']
+['opaque disk(s)', '1']
+['opaque grains', '1']
+['chunk(s) \nopaque,', '1']
+['translucent flake(s)', '1']
+['opaque, \nfiber(s)', '1']
+['transparent,\npowder', '1']
+['transparent, powder', '1']
+['opaque, chunks', '1']
+['opaque, \nflakes', '1']
+['opaque, \npowder \nliquid', '1']
+['chunks \ntranslucent, \nflake(s)', '1']
+['opaque, \nchunks \ngranule(s)', '1']
+['opaque, \nchunks \nchunk(s)', '1']
+['opaque, \nliquid\nsolid', '1']
+['dark brown chunks', '1']
+['transparent,', '1']
+['dark brown lump', '1']
+['translucent chunks', '1']
+['pliable solid', '1']
+['gel', '1']
+['raw, powdered', '1']
+['pellets', '1']
+['hardened solution', '1']
+['transparent, viscous liquid', '1']
+['translucent pellets', '1']
+['sample on stone', '1']
+['fibers', '1']
+['lump', '1']
+['liquid mixture', '1']
+['chips, powder', '1']
+['chunks', '1']
+
+
+Broken down single term:
+
+('opaque', 51)
+('transparent', 25)
+('liquid', 24)
+('translucent', 22)
+('solid', 15)
+('film', 13)
+('paste', 12)
+('chunks', 11)
+('chunk(s)', 10)
+('powder', 10)
+('flake(s)', 8)
+('dried', 7)
+('sheet(s)', 6)
+('granule(s)', 6)
+('raw', 4)
+('block(s)', 3)
+('sheets', 3)
+('flakes', 3)
+('grains', 3)
+('paint-out', 3)
+('dark', 3)
+('brown', 3)
+('pellets', 3)
+('photographic', 3)
+('beads', 3)
+('physical', 2)
+('form', 2)
+('slide', 2)
+('chips', 2)
+('disk(s)', 2)
+('plate', 2)
+('lump', 2)
+('solution', 2)
+('small', 2)
+('in', 2)
+('tube', 2)
+('on', 2)
+('sample', 2)
+('roll', 2)
+('natural', 1)
+('single', 1)
+('transparentchunk(s)', 1)
+('solid;', 1)
+('film;', 1)
+('fiber(s)', 1)
+('pieces', 1)
+('fragments', 1)
+('pliable', 1)
+('block', 1)
+('gel', 1)
+('powdered', 1)
+('hardened', 1)
+('viscous', 1)
+('thin', 1)
+('(metal)', 1)
+('samples', 1)
+('canvas', 1)
+('cube', 1)
+('stone', 1)
+('fibers', 1)
+('sheet', 1)
+('paper', 1)
+('mixture', 1)
+('movie', 1)
+('spray', 1)
+('crayon', 1)
+('ink', 1)
+('stick', 1)
+
+------------------------------------------------------------------------------------
+
+TYPICAL USE
+
+('Colorant ', 2892)
+('Colorant', 2319)
+('other', 2215)
+('', 1945)
+('Binding Medium', 1151)
+('Construction Material', 808)
+('Photography', 639)
+('Vehicle / Solvent', 309)
+('Component of Another Category', 212)
+('Varnish / Protective Coating', 152)
+('Textile', 127)
+('Medium', 93)
+('Filler', 81)
+('Other', 66)
+('Surfactant', 44)
+('Gilding', 44)
+('Support ', 35)
+('Adhesive', 30)
+('Paper', 29)
+('Drying Agent', 14)
+('Ground / Primer', 10)
+('Defoamer', 9)
+('Emulsifier', 8)
+('Dispersant', 4)
+('Vehicle (thinned) or Varnish (unthinned)', 2)
+('Coalescing aid for emulsion polymers', 2)
+('Thickener', 2)
+('Polishing Material', 2)
+('Typical Use', 1)
+('Cleaning agent', 1)
+('paint removal', 1)
+('Artificial aging', 1)
+('additive', 1)
+('Sealant', 1)
+('Abrasive', 1)
