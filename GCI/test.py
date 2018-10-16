@@ -7,6 +7,8 @@ from cromulent.model import factory, ManMadeObject, Material, Type, Place, \
 from cromulent.vocab import PrimaryName, Name, Color, instances, Department, \
 	Description, Barcode, CatalogNumber
 from dateparser import parse
+from datetime import timedelta
+
 factory.validate_profile = False
 
 
@@ -120,10 +122,10 @@ def main():
 						tspan.end_of_the_end = str(parse(str(int(end_year)+1) + 'January', settings={'PREFER_DAY_OF_MONTH': 'first'}))
 					else:
 						tspan.begin_of_the_begin = str(parse(adate, settings={'PREFER_DAY_OF_MONTH': 'first'}))
-						tspan.end_of_the_end = str(parse(adate, settings={'PREFER_DAY_OF_MONTH': 'last'}))
+						tspan.end_of_the_end = str(parse(adate + ' 23:59:59', settings={'PREFER_DAY_OF_MONTH': 'last'}))
 				else:
 					tspan.begin_of_the_begin = str(parse(adate, settings={'PREFER_DAY_OF_MONTH': 'first'}))
-					tspan.end_of_the_end = str(parse(adate, settings={'PREFER_DAY_OF_MONTH': 'last'}))
+					tspan.end_of_the_end = str(parse(adate, settings={'PREFER_DAY_OF_MONTH': 'last'}) + timedelta(days=1)) 
 
 
 				acq.timespan = tspan
