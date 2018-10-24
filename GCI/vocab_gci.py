@@ -1,20 +1,29 @@
 
-from cromulent.model import Type, Identifier, Person, Activity, Material, Actor, Group
-from cromulent.vocab import instances, register_aat_class, Department
+from cromulent.model import Type, Identifier, Person, Activity, \
+	Material, Actor, Group, ContactPoint, MeasurementUnit, Dimension, \
+	LinguisticObject
+from cromulent.vocab import instances, register_aat_class, Department, CollectionSet
 
 
 register_aat_class("Barcode", Identifier, "300343361", "Barcode")
 register_aat_class("CatalogNumber", Identifier, "300404620", "Catalog Number")
-# register_aat_class("Prepared", Activity, "300010788", "Prepared")
+register_aat_class("SamplePreparation", Type, "300379533", "Sample Preparation")
+# register_aat_class("PhoneNumber", ContactPoint, "")
+register_aat_class("EMail", ContactPoint, "300149026", "Electronic Mail")
+register_aat_class("Telephone", ContactPoint, "300249768", "Telephone")
+# Grid Locationregister_aat_class("Mass", Dimension, "300055664", "Mass")
+register_aat_class("MassVolume", Dimension, "300055649", "Mass or Volume")
+register_aat_class("Notes", LinguisticObject, "300027200", "Notes")
+register_aat_class("Safety", Type, "300055282", "Safety")
+register_aat_class("FireSafety", Type, "300055285", "Fire Safety")
+# No AAT vocab term for Formulation, use Recipe aat_id instead
+register_aat_class("Formulation", LinguisticObject, "300027043", "Formulation")
+register_aat_class("Formula", Identifier, "300055660", "Chemical Formula")
 
-# Grid Location
-# cat = Type("http://vocab.getty.edu/page/aat/300404620", label="Catalog Number")
 
-notes = Type("http://vocab.getty.edu/aat/300027200", label="Notes")
 
-instances["notes"] = notes 
 
-# Natural/Synthetic
+# NATURAL/SYNTHETIC
 
 natural = Type("http://vocab.getty.edu/aat/300219527", label="Natural")
 synthetic = Type("http://vocab.getty.edu/aat/300218678", label="Synthetic")
@@ -22,12 +31,12 @@ synthetic = Type("http://vocab.getty.edu/aat/300218678", label="Synthetic")
 instances["natural"] = natural 
 instances["synthetic"] = synthetic
 
-# Sample Type
+# SAMPLE TYPE
 
 pigment = Type("http://vocab.getty.edu/aat/300013109", label="Pigment")
 stone_nat = Type("http://vocab.getty.edu/aat/300011176", label="Stone, natural") 
 stone_art = Type("http://vocab.getty.edu/aat/300010788", label="Stone, artificial")
-mixture = Type("http://vocab.getty.edu/aat/300246925", label="Prepared mixture")
+mixture = Type("http://vocab.getty.edu/aat/300246925", label="Mixture")
 wood = Type("http://vocab.getty.edu/aat/300011914", label="Wood")
 dye = Type("http://vocab.getty.edu/aat/300013029", label="Dye")
 oil_paint = Type("http://vocab.getty.edu/aat/300015050", label="Paint, oil-based")
@@ -115,11 +124,11 @@ instances["plastic"] = plastic
 instances["other"] = other
 
 
-# Typical Use
+# TYPICAL USE
 
 construction = Type("http://vocab.getty.edu/aat/300014857", label="Construction Material")
 colorant = Type("http://vocab.getty.edu/aat/300013026", label="Colorant")
-# Assuming Photography as a process, but could be as a discipline
+# Assuming Photography as a process, but could mean a discipline
 photography = Type("http://vocab.getty.edu/aat/300054225", label="Photography")
 vehicle = Type("http://vocab.getty.edu/aat/300014774", label="Vehicle (binder)")
 # Assuming "Component of Another Category" is Material Components
@@ -161,26 +170,27 @@ instances['dispersant'] = dispersant
 instances['thickener'] = thickener
 
 
-# Physical form
+# PHYSICAL FORM
 
 # raw / natural form
 opaque = Type("http://vocab.getty.edu/aat/300056216", label="Opaque")
 liquid = Type("http://vocab.getty.edu/aat/300015378", label="Liquid")
 transparent = Type("http://vocab.getty.edu/aat/300056220", label="Transparent")
 transluscent = Type("http://vocab.getty.edu/aat/300056219", label="Translucent")
-# slides (photographs): 300128371 OR slides(microscopy): 300380440
+# slides (photographs): 300128371 OR slides(microscopy): 300380440, could mean both depending on the sample
 slide = Type("http://vocab.getty.edu/aat/300380440", label="Slide")
 paste = Type("http://vocab.getty.edu/aat/300014838", label="Paste")
 solution = Type("http://vocab.getty.edu/aat/300210311", label="Solution")
 roll = Type("http://vocab.getty.edu/aat/300127382", label="Film Roll")
 flake = Type("http://vocab.getty.edu/aat/300014649", label="Flakes")
-# chips 
+# chips -- no term "chips" in AAT, could have the same meaning as flakes
 solid = Type("http://vocab.getty.edu/aat/300015377", label="Solid")
 # paint_out
 # plate
 # sheets
 # granules
 # blocks
+# chunks -- no AAT term 
 
 instances["opaque"] = opaque  
 instances["liquid"] = liquid 
@@ -195,7 +205,7 @@ instances["flake(s)"] = flake
 instances["solid"] = solid
 
 
-# Color 
+# COLOR 
 
 multi_colored = Type("http://vocab.getty.edu/aat/300252256", label="Multi-colored")
 yellow = Type("http://vocab.getty.edu/aat/300127794", label="Yellow")
@@ -207,7 +217,7 @@ green = Type("http://vocab.getty.edu/aat/300128438", label="Green")
 black = Type("http://vocab.getty.edu/aat/300130920", label="Black")
 violet = Type("http://vocab.getty.edu/aat/300130602", label="Violet")
 orange = Type("http://vocab.getty.edu/aat/300126734", label="Orange")
-# light_amber = Type("")
+# light_amber -- no AAT term, there's term for "light"
 amber = Type("http://vocab.getty.edu/aat/300311361", label="Amber")
 colorless = Type("http://vocab.getty.edu/aat/300265729", label="Colorless")
 light_yellow = Type("http://vocab.getty.edu/aat/300127850", label="Light Yellow")
@@ -256,7 +266,7 @@ instances['yellowish white'] = yellowish_white
 instances['light grey'] = light_grey
 
 
-# Acquired_by People
+# ACQUIRED_BY PERSON
 
 AKaplan = Person(label="Art Kaplan")
 BGinell = Person(label="Bill Ginell")
@@ -302,17 +312,17 @@ person = {
 	'Casey Greet': CGreet,
 	'Jesus Jimerez': JJimerez,
 	'M. Derrick': MDerrick,
-	'Cecily Grzywacz': CGrzywacz, 'C.  Grzywacz': CGrzywacz,
+	'Cecily Grzywacz': CGrzywacz, 'C. Grzywacz': CGrzywacz,
 	'Giacomo Chiari': GChiari, 'G. Chiari': GChiari,
-	'Z.  Pinney': ZPinney, 'Z. Pinney': ZPinney,
+	'Z. Pinney': ZPinney, 
 	'M. Komsky': MKomsky,
 	'A. Rothe': ARothe,
-	'A. Parker': AParker, 'A.  Parker': AParker,
+	'A. Parker': AParker,
 	'Carrie Brindle': CBrindle,
-	'H.  Florsheim': HFlorsheim, 'H. Florsheim': HFlorsheim,
+	'H. Florsheim': HFlorsheim,
 	'M. Bolton': MBolton,
 	'Catherine Patterson': CPatterson,
-	'N.  Barrio': NBarrio,
+	'N. Barrio': NBarrio,
 	'M. Bishop': MBishop,
 	'H. Khanjian': HKhanjian,
 	'JPGM Painting Conservation': JPGM_Paint,
@@ -332,9 +342,9 @@ dept = {
 }
 
 
-# Acquired_from Sellers
+# ACQUIRED FROM SELLERS
 
-Schoettlin = Actor(label="Charles Schoettlin")
+CSchoettlin = Actor(label="Charles Schoettlin")
 Kremer= Group(label="Kremer Pigments Inc.")
 Dick_Blick = Group(label="Dick Blick Art Materials")
 World_Timbers = Group(label="World Timbers")
@@ -358,8 +368,8 @@ Italian_Art = Group(label="The Italian Art Store")
 
 
 sellers = {
-	'Charles Schoettlin': Schoettlin, 
-	'Kremer Pigments Inc': Kremer,
+	'Charles Schoettlin': CSchoettlin, 
+	'Kremer Pigments Inc': Kremer, 'Kremer-Pigmente': Kremer, 'Kremer Pigmente (components)': Kremer, 'Kremer Pigmente': Kremer,
 	'Dick Blick Art Materials': Dick_Blick,
 	'World Timbers': World_Timbers,
 	'E. W. Forbes Collection': Forbes,
@@ -368,7 +378,7 @@ sellers = {
 	'H. Schweppe': Schweppe,
 	'U.S.Customs Lab, Long Beach': US_Customs,
 	'Standard Brands':Standard_Brands,
-	'Daniel Smith Artist Materials': Daniel_Smith,
+	'Daniel Smith Artist Materials': Daniel_Smith, 'Daniel Smith': Daniel_Smith,
 	'The Arbidar Co.': Arbidar,
 	'Harvard Art Museums': Harvard,
 	'Sam Francis Foundation': Sam_Francis,
@@ -379,15 +389,123 @@ sellers = {
 	'The Italian Art Store': Italian_Art
 }
 
+# COLLECTION NAME
+
+Schoettlin_Coll = CollectionSet(label="Schoettlin Mineral Collection")
+
+
+collection = {
+	"Schoettlin Mineral Collection": Schoettlin_Coll
+}
+
+
+# CONTACT PERSONS
+
+WSchoettlin = Person(label="Warren Schoettlin")
+MKeller = Person(label="Marthe Keller")
+RSchmidtling = Person(label="Ron Schmidtling")
+
+contact = {
+	'Warren Schoettlin': WSchoettlin,
+	'Marthe Keller': MKeller,
+	'Ron Schmidtling': RSchmidtling
+}
 
 
 
-# Compound Type
-organic = Type("300191632", label="Organic")
-inorganic = Type("300191633", label="Inorganic")
+# MANUFACTURERS
+
+# Kremer-Pigmente 
+# Kremer Pigmente (components)
+Winsor_Newton = Group(label="Winsor & Newton")
+Cargille_Lab = Group(label="R.P. Cargille Laboratories")
+# Kremer Pigmente
+# prepared by H. Schweppe
+# Daniel Smith
+Max_Grumbacher = Group(label="Max Grumbacher")
+Kodak = Group(label="Eastman Kodak Co.")
+Verfmolen = Group(label="Verfmolen 'De Kat'")
+Holbein_Works = Group(label="Holbein Works, Ltd.")
+Royal_Talens = Group(label="Royal Talens")
+Zecchi = Group(label="Zecchi")
+Daler_Rowney = Group(label="Daler Rowney")
+Cornelissen_Son = Group(label="L.  Cornelissen & Son")
+
+
+manufacturers = {
+	'Winsor & Newton': Winsor_Newton,
+	'R.P. Cargille Laboratories': Cargille_Lab,
+	'Max Grumbacher': Max_Grumbacher, 'Max Grumbacher / Sanford': Max_Grumbacher, 'Grumbacher': Max_Grumbacher,
+	'Eastman Kodak Co.': Kodak,
+	"Verfmolen 'De Kat'": Verfmolen,
+	"Holbein Works, Ltd.": Holbein_Works,
+	"Royal Talens": Royal_Talens,
+	"Zecchi": Zecchi,
+	"Daler Rowney": Daler_Rowney,
+	"L.  Cornelissen & Son": Cornelissen_Son
+}
+
+
+# COMPOUND TYPE
+organic = Type("http://vocab.getty.edu/aat/300191632", label="Organic")
+inorganic = Type("http://vocab.getty.edu/aat/300191633", label="Inorganic")
+# mix = Type("http://vocab.getty.edu/aat/300206579", label="Combination Inorganic/Organic Material")
 
 instances['organic'] = organic
 instances['inorganic'] = inorganic
+# instances['mix.'] = mix
+instances['mix.'] = mixture
+instances['mixture'] = mixture
+
+instances['other (i.e. many components)'] = other
+
+
+
+
+# MIXTURE PIGMENT
+lead_white = Type("300013754", label="Lead White")
+vine_black = Type("300013161", label="Vine Black")
+yellow_ochre = Type("300013967", label="Yellow Ochre")
+verdigris = Type("300013491", label="Verdigris")
+
+
+
+# MISCELLANEOUS
+
+
+
+
+# Mass or Volume unit
+# mass_volume = ['g', 'oz', 'kg', 'ml']
+g = MeasurementUnit("http://vocab.getty.edu/aat/300379225", label="grams")
+oz = MeasurementUnit("http://vocab.getty.edu/aat/300379229", label="ounces")
+kg = MeasurementUnit("http://vocab.getty.edu/aat/300379226", label="kilograms")
+
+# sheets as measurement unit 300014671 (flat object)	
+# exp
+
+# 300404395: 'cubic centimeters' == 'milliliters'
+ml = MeasurementUnit("300404395", label="milliliters")
+# fl. oz.
+
+instances['g'] = g
+instances['oz'] = oz
+instances['kg'] = kg
+instances['ml'] = ml 
+
+
+
+# SAFETY
+reactivity = Type("http://vocab.getty.edu/aat/300191639", label="Reactivity")
+health = Type("http://vocab.getty.edu/aat/300055133", label="Health")
+
+instances['reactivity'] = reactivity
+instances['health'] = health
+
+
+
+
+
 
 
 
